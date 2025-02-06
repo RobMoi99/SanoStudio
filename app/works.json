@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Luma Craft",
+        "services": [
+            "Design",
+            "Development"
+        ],
+        "images": [
+            "web_dev_1.jpg",
+            "web_dev_2.jpg",
+            "web_dev_3.jpg"
+        ]
+    },
+    {
+        "title": "Vivid Nest",
+        "services": [
+            "SEO",
+            "Design",
+            "Development"
+        ],
+        "images": [
+            "marketing_1.jpg",
+            "marketing_2.jpg",
+            "marketing_3.jpg"
+        ]
+    },
+    {
+        "title": "Vantro",
+        "services": [
+            "Design",
+            "Development"
+        ],
+        "images": [
+            "design_1.jpg",
+            "design_2.jpg",
+            "design_3.jpg"
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+
+/* HERO */
+.header-clamp {
+    font-size: clamp(3rem, 15vw, 30rem);
+}
+
+.header-p-clamp {
+    font-size: clamp(0.7rem, 1vw, 1.22rem);
+}
+
+
+.margin-clamp {
+    margin-left: clamp(5rem, 1vw, 4rem);
+    margin-right: clamp(5rem, 1vw, 4rem);
+}
+
+.img1-clamp {
+    width: clamp(5rem, 15vw, 20rem);
+}
+
+.img2-clamp {
+    width: clamp(10rem, 10vw, 50rem);
+}
+
+.img3-clamp {
+    width: clamp(10rem, 13vw, 50rem);
+}
+
+.svg-clamp {
+    width: clamp(15rem, 35vw, 50rem);
+}
+
+.page-number-clamp{
+    font-size: clamp(5rem, 10vw, 20rem);
+
+}
+
+/* WORKS */
+
+.works-header-clamp {
+    font-size: clamp(7.5rem, 15vw, 20rem);
+}
+.works-services-clamp {
+    font-size: clamp(1.3rem, 1.3vw, 10rem);
+}
+
+.works-img1-clamp {
+    width: clamp(13rem, 20vw, 30rem);
+}
+
+.works-img2-clamp {
+    width: clamp(11rem, 15vw, 15rem);
+}
+
+.works-img3-clamp {
+    width: clamp(13rem, 13vw, 20rem);
+}
+
+/* CTA */
+
+.text-clamps{
+    font-size: clamp(2.3rem, 1vw, 1.22rem);
+
+}
+.text-mapped-clamps{
+    font-size: clamp(2rem, 3vw, 5rem);
+
+}
+
+.cta-button-clamps{
+    font-size: clamp(1.6rem, 1.5vw, 3rem);
+
+}
+
+
+/* SERVICES */
+
+.service-list-clamp{
+    font-size: clamp(3rem, 8vw, 9rem);
+
+}
+.service-text-clamp{
+    font-size: clamp(1.3rem, 1.5vw, 4rem);
+
+}
+
+
