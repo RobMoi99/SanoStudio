@@ -11,6 +11,7 @@ const Footer = () => {
                 <div className=' flex justify-center items-center w-full relative'>
                     <div className=' w-full absolute h-[1px] bg-white' />
                     <Button />
+                    
                 </div>
                 <div className=' font-italiana header-clamp leading-none  '>Sano <mark className=' -ml-[4vw] bg-transparent text-white font-inter font-bold'>Studio</mark></div>
             </div>
