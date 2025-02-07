@@ -29,16 +29,20 @@ const Nav = () => {
             <div className='font-inter fixed flex justify-center mix-blend-difference w-full mt-10  z-[70]'>
                 <button className=' relative flex overflow-hidden header-p-clamp' onClick={() => setToggleMenu(!toggleMenu)} >
                     <motion.div
-
+                        initial={{ y: 0 }}
                         animate={{ y: toggleMenu ? '-100%' : 0 }}
+                        transition={{ duration: 0.5 }}
                         className=' '>[Menu]</motion.div>
                     <motion.div
+                        initial={{ y: '-100%' }}
                         animate={{ y: toggleMenu ? 0 : '-100%' }}
+                        transition={{ duration: 0.5 }}
                         className=' absolute'>[Close]</motion.div>
                 </button>
             </div>
 
             <motion.div
+                initial={{ y: '-100%' }}
                 animate={{
                     y: toggleMenu ? 0 : '-100%',
                     pointerEvents: toggleMenu ? "auto" : "none",
@@ -61,9 +65,9 @@ const Nav = () => {
                                             onMouseLeave={() => setHover(null)}
                                             className='menu-btn-clamp flex '>
                                             <motion.div
-                                              animate={{
-                                                opacity: hover === index ? 1 : 0.6,
-                                              }}
+                                                animate={{
+                                                    opacity: hover === index ? 1 : 0.6,
+                                                }}
                                             >
                                                 {item}
                                             </motion.div>

@@ -83,7 +83,7 @@ const Hero = () => {
                     animate="visible"
                     custom={3} // No delay
                     tr
-                    className=' absolute left-[26vw] z-20 utlg:left-[5vw] utlg:bottom-[5vw] bottom-[5rem]'>
+                    className=' absolute left-[26vw] lg:z-20 utlg:left-[5vw] utlg:bottom-[5vw] bottom-[5rem]'>
                     <span className=' opacity-50  font-italiana '>(02)</span>
                     <img className=' img2-clamp' src="https://i.pinimg.com/736x/de/7a/31/de7a31826a749692597adff53f653fd4.jpg" alt="" />
                 </motion.div>
@@ -95,7 +95,8 @@ const Hero = () => {
                     animate="visible"
                     custom={2.8} // No delay
                     className=' absolute right-[10vw] top-[5rem] utlg:top-[5rem]'>
-                    <span className=' opacity-50 font-italiana'>(03)</span>
+                    <span className=' opacity-50 font-italiana hidden lg:block'>(03)</span>
+                    <span className=' opacity-50 font-italiana lg:hidden'>(01)</span>
                     <img className='  img3-clamp' src="https://i.pinimg.com/736x/14/ff/9d/14ff9dd0d086d93d84547154e2d1e9cf.jpg" alt="" />
                 </motion.div>
                 <motion.div
@@ -137,7 +138,7 @@ const Hero = () => {
                                 variants={textVariants}
                                 initial="hidden"
                                 animate="visible"
-                                className=' w-1/3 utlg:w-[60%] header-p-clamp mix-blend-difference   absolute mt-[13vw] utlg:mt-[19vw]'>We bring your brand’s vision to life with minimalistic, innovative design. From logos to full identities, we create visuals that leave a lasting impression. Let’s make something extraordinary.</motion.p>
+                                className=' w-1/3 utlg:w-[50%] header-p-clamp mix-blend-difference    absolute mt-[13vw] utlg:mt-[19vw]'>We bring your brand’s vision to life with minimalistic, innovative design. From logos to full identities, we create visuals that leave a lasting impression. Let’s make something extraordinary.</motion.p>
 
                         </div>
 
