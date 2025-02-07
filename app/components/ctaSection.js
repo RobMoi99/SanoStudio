@@ -55,8 +55,8 @@ const CtaSection = () => {
                 {/* MOBILE */}
                 <div className=' flex flex-col gap-10'>
 
-                    <p className='text-clamps text-[3vw] leading-none lg:hidden'>Unleash design with Sano Studio. We craft identities, turning ideas into experiences.</p>
-                    <p className='text-clamps text-[3vw] leading-none lg:hidden'>Breaking through noise, leaving lasting impressions. Join us in shaping the future.</p>
+                    <p className='text-clamps  leading-none lg:hidden'>Unleash design with Sano Studio. We craft identities, turning ideas into experiences.</p>
+                    <p className='text-clamps  leading-none lg:hidden'>Breaking through noise, leaving lasting impressions. Join us in shaping the future.</p>
 
                 </div>
 

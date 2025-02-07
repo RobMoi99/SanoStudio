@@ -65,6 +65,8 @@
     font-size: clamp(2.3rem, 1vw, 1.22rem);
 
 }
+
+
 .text-mapped-clamps{
     font-size: clamp(2rem, 3vw, 5rem);
 
