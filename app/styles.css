@@ -84,4 +84,8 @@
 
 }
 
+/* MENU */
 
+.menu-btn-clamp {
+    font-size: clamp(3rem, 6vw, 13rem);
+}

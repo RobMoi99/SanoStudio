@@ -108,15 +108,15 @@ const Hero = () => {
                                 variants={textVariants}
                                 initial="hidden"
                                 animate="visible"
-                                className='  absolute mb-[14vw] utsm:mb-[25vw]  mix-blend-difference header-p-clamp '>[creative agency]</motion.div>
+                                className='  absolute mb-[14vw] utsm:mb-[25vw]   header-p-clamp '>[creative agency]</motion.div>
 
-                            <h1 className=' svg-clamp  mix-blend-difference  '>
+                            <h1 className=' svg-clamp   '>
                                 <Sano />
                             </h1>
                         </div>
                         <div className=' flex-1 flex  relative  justify-end  '>
 
-                            <div className='  overflow-hidden header-clamp mix-blend-difference  w-full flex justify-end utlg:justify-center -mt-[5.5vw] utlg:-mt-[3vw] font-bold '>
+                            <div className='  overflow-hidden header-clamp  w-full flex justify-end utlg:justify-center -mt-[5.5vw] utlg:-mt-[3vw] font-bold '>
 
                                 <motion.h1
                                     initial={{

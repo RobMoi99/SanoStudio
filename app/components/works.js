@@ -29,7 +29,7 @@ const Works = () => {
                                         <li key={i}>{service}</li>
                                     ))}
                                 </ul>
-                                <div className='absolute w-full utlg:top-[30vw] utsm:top-[80vw] z-0'>
+                                <div className='absolute w-full utlg:top-[10vw] utsm:top-[40vw] z-0'>
                                     <div
                                         className='absolute overflow-hidden right-[12vw] utsm:top-[0vw] top-[4vw] lg:right-[32vw] lg:top-[4vw]'>
                                         <motion.div
@@ -51,10 +51,11 @@ const Works = () => {
                                             <span className='opacity-50'>
                                                 (02)
                                             </span>
-                                            <img className='works-img3-clamp h-auto z-30' src='https://i.pinimg.com/736x/e2/3e/91/e23e91063e521266495d9652f310c496.jpg' alt={item.title} />
+                                                <img className='works-img3-clamp h-auto z-30' src='https://i.pinimg.com/736x/e2/3e/91/e23e91063e521266495d9652f310c496.jpg' alt={item.title} />
+                                                
                                         </motion.div>
                                     </div>
-                                    <div className='absolute overflow-hidden right-[45vw] utsm:top-[70vw] top-[30vw] lg:right-[15vw] lg:top-[10vw]'>
+                                    <div className='absolute overflow-hidden right-[45vw] utsm:top-[40vw] top-[30vw] lg:right-[15vw] lg:top-[10vw]'>
                                         <motion.div
                                             animate={{ y: isInView ? 0 : '100%' }}
                                             transition={{ ease: 'easeInOut', duration: 2 }}

@@ -1,12 +1,12 @@
-import { Italiana , Inter} from "next/font/google";
+import { Italiana, Inter } from "next/font/google";
 import "./globals.css";
-
+import Nav from "./components/nav";
 
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["200","400", "700"],
+  weight: ["200", "400", "700"],
 });
 
 const italiana = Italiana({
@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${italiana.variable}  antialiased`}
       >
+        <Nav />
         {children}
       </body>
     </html>
