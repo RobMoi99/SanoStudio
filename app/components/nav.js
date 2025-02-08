@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import '../styles.css'
+import Link from 'next/link'
 
 const Nav = () => {
 
@@ -13,21 +14,37 @@ const Nav = () => {
         'About',
         'Selected Works',
         'Services',
+        'Contact'
+
+    ]
+    const links = [
+        '/#home',
+        '/#about',
+        '/#works',
+        '/#services',
+        '/contact',
 
     ]
 
     const imageLinks = [
-        'https://i.pinimg.com/736x/e2/42/6c/e2426c0e092496b657005c86c7354992.jpg',
-        'https://i.pinimg.com/236x/05/dd/99/05dd99e4bfc039c6dc59ab99e8d04d06.jpg',
-        'https://i.pinimg.com/474x/28/78/aa/2878aab15b892d7898e1cfb09f22cc2e.jpg',
-        'https://i.pinimg.com/236x/c9/d8/c6/c9d8c62781df46f39fcdfd60df09e6be.jpg',
+        '../ss4.jpg',
+        '../ssH1.jpg',
+        '../ssH2.jpg',
+        '../ssH4.jpg',
+        '../ss6.jpg',
+        '../ss2.jpg',
 
     ]
 
+    console.log(toggleMenu)
     return (
         <>
             <div className='font-inter fixed flex justify-center mix-blend-difference w-full mt-10  z-[70]'>
-                <button className=' relative flex overflow-hidden header-p-clamp' onClick={() => setToggleMenu(!toggleMenu)} >
+                <motion.button
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1}}
+                    transition={{ delay:2.8 , duration: 3.3}}
+                    className=' relative flex overflow-hidden header-p-clamp' onClick={() => setToggleMenu(!toggleMenu)} >
                     <motion.div
                         initial={{ y: 0 }}
                         animate={{ y: toggleMenu ? '-100%' : 0 }}
@@ -38,7 +55,7 @@ const Nav = () => {
                         animate={{ y: toggleMenu ? 0 : '-100%' }}
                         transition={{ duration: 0.5 }}
                         className=' absolute'>[Close]</motion.div>
-                </button>
+                </motion.button>
             </div>
 
             <motion.div
@@ -63,13 +80,17 @@ const Nav = () => {
                                         <div
                                             onMouseEnter={() => setHover(index)}
                                             onMouseLeave={() => setHover(null)}
+
                                             className='menu-btn-clamp flex '>
                                             <motion.div
+                                                onClick={() => setToggleMenu(false)}
                                                 animate={{
                                                     opacity: hover === index ? 1 : 0.6,
                                                 }}
                                             >
-                                                {item}
+                                                <Link href={links[index]}>
+                                                    {item}
+                                                </Link>
                                             </motion.div>
                                             {hover === index && (
                                                 <motion.span

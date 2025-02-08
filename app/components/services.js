@@ -20,7 +20,15 @@ const Services = () => {
     ]
 
 
-
+    const images =
+    [
+        '../ssS1.jpg',
+        '../ssS2.jpg',
+        '../ssS3.jpg',
+        '../ssS4.jpg',
+        '../ss6.jpg',
+     
+    ]
 
     return (
         <div className=' overflow-hidden  font-italiana relative'>
@@ -36,7 +44,7 @@ const Services = () => {
                     services.map((item, index) => (
                         <>
 
-                            <div onMouseEnter={() => setToggleService(index)}
+                            <div id='services' onMouseEnter={() => setToggleService(index)}
                                 onClick={() => setClickedService(prev => (prev === index ? null : index))}
                                 className='service-list-clamp cursor-pointer  relative w-full  flex justify-center' key={index}>
                                 <div>*</div>
@@ -62,7 +70,7 @@ const Services = () => {
                                     animate={{
                                         opacity: index === toggleService ? 1 : 0,
                                         rotate: index === toggleService ? 0 : -8,
-                                        y: index === toggleService ? 0 : '20%'
+                                        y: index === toggleService ? 0 : '50%'
                                     }}
                                     transition={{
                                         duration: 0.4,
@@ -71,7 +79,7 @@ const Services = () => {
                                     }}
                                     className=' utlg:hidden  absolute   origin-bottom -bottom-[10rem] right-40  bg-red-400'>
 
-                                    <img className=' w-[20vw] h-auto' src="https://i.pinimg.com/736x/9c/e8/ff/9ce8ff454d140e73d01a84ad7482c1f2.jpg" alt="" />
+                                    <img className=' w-[20vw] h-auto' src={images[index]} alt="" />
                                 </motion.div>
                                 <div className=' w-[70%] hitespace-nowrap mix-blend-difference'>
                                     {item}

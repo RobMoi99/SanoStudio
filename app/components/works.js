@@ -5,10 +5,32 @@ import '../styles.css'
 
 const Works = () => {
 
-    const worksLenght = 4
+    const worksLenght = 3
+
+
+    const imageSets = [
+        {
+            id: 1,
+            imageOne: '../ss3.jpg',
+            imageTwo: '../ss4.jpg',
+            imageThree: '../ss5.jpg',
+        },
+        {
+            id: 2,
+            imageOne: '../ss6.jpg',
+            imageTwo: '../ss7.jpg',
+            imageThree: '../ss9.jpg',
+        },
+        {
+            id: 3,
+            imageOne: '../ssH2.jpg',
+            imageTwo: '../ssH1.jpg',
+            imageThree: '../ssH4.jpg',
+        },
+    ];
 
     return (
-        <div className='relative font-italiana w-full '>
+        <div id='works' className='relative font-italiana w-full '>
             <div className='  sticky left-0 top-5  font-inter opacity-50  header-p-clamp  ml-[5vw] text-white z-50'>[selected work]</div>
             {
                 works.map((item, index) => {
@@ -18,7 +40,7 @@ const Works = () => {
                     const isInView = useInView(ref, { once: true });
 
                     return (
-                        <div ref={ref} className='h-[100vh] sticky top-0 bg-black' key={index}>
+                        <div ref={ref} className='h-[130vh] sticky top-0 bg-black' key={index}>
                             <div className='absolute works-services-clamp m-10 top-0 font-inter utlg:font-italiana right-0'>{index + 1} / {worksLenght}</div>
                             <div className=' h-full flex flex-col'>
 
@@ -38,18 +60,18 @@ const Works = () => {
                                         <motion.div
                                             animate={{ y: isInView ? 0 : '100%' }}
                                             transition={{ ease: 'easeInOut', duration: 2.5 }}
-                                           >
-                                            <span className=' '>(01)</span>
-                                            <img className=' works-img1-clamp  h-auto object-cover' src="https://i.pinimg.com/736x/4b/32/0c/4b320cd304deff3b0862b672f31fc512.jpg" alt="" />
+                                        >
+                                            <span className=' opacity-50 '>(01)</span>
+                                            <img className=' works-img1-clamp  h-auto object-cover' src={imageSets[index].imageOne} alt="" />
                                         </motion.div>
                                     </div>
                                     <div className=' overflow-hidden relative  lg:right-[5vw] top-[10vw]'>
                                         <motion.div
                                             animate={{ y: isInView ? 0 : '100%' }}
                                             transition={{ ease: 'easeInOut', duration: 1.5 }}
-                                            >
-                                            <span className=' '>(02)</span>
-                                            <img className=' works-img2-clamp h-auto object-cover' src="https://i.pinimg.com/236x/aa/e5/9b/aae59b8fa947bc0e87d2242842f4ca55.jpg" alt="" />
+                                        >
+                                            <span className=' opacity-50'>(02)</span>
+                                            <img className=' works-img2-clamp h-auto object-cover' src={imageSets[index].imageTwo} alt="" />
                                         </motion.div>
                                     </div>
                                     <div className=' overflow-hidden  relative lg:right-[8vw]'>
@@ -57,9 +79,9 @@ const Works = () => {
                                             animate={{ y: isInView ? 0 : '100%' }}
                                             transition={{ ease: 'easeInOut', duration: 2 }}
 
-                                            >
-                                            <span className=' '>(03)</span>
-                                            <img className=' works-img3-clamp  h-auto object-cover  ' src="https://i.pinimg.com/236x/11/ba/55/11ba55f218266440c0dfbd205843c823.jpg" alt="" />
+                                        >
+                                            <span className=' opacity-50'>(03)</span>
+                                            <img className=' works-img3-clamp  h-auto object-cover  ' src={imageSets[index].imageThree} alt="" />
                                         </motion.div>
                                     </div>
 

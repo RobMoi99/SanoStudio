@@ -43,27 +43,28 @@ const Hero = () => {
 
     const [scroll, setScroll] = useState(false)
 
-    // useEffect(() => {
-    //     document.body.style.overflow = 'hidden'
+  
 
-    //     const timer = setTimeout(() => {
-    //         setScroll(true)
-    //     }, 4000)
+useEffect(() => {
+    document.body.style.overflow = 'hidden';
 
-    //     return () => {
-    //         clearTimeout(timer)
-    //         document.body.style.overflow = 'auto'
-    //     }
-    // }, [])
+    const timer = setTimeout(() => {
+        setScroll(true);
+    }, 4000);
 
-    // useEffect(() => {
-    //     document.body.style.overflow = scroll ? 'auto' : 'hidden'
-    // }, [scroll])
+    return () => {
+        clearTimeout(timer);
+        document.body.style.overflow = 'auto';
+    };
+}, []);
 
+useEffect(() => {
+    document.body.style.overflow = scroll ? 'auto' : 'hidden';
+}, [scroll]);
     return (
 
         <>
-            <div ref={ref} className=' font-inter   h-[100vh] relative overflow-hidden '>
+            <div id='home' ref={ref} className=' font-inter   h-[100vh] relative overflow-hidden '>
 
                 <motion.div
                     style={{ y: y1 }}
@@ -73,7 +74,7 @@ const Hero = () => {
                     custom={2.5} // No delay
                     className=' absolute left-[7vw] top-[5rem] utlg:hidden'>
                     <span className=' opacity-50  font-italiana   '>(01)</span>
-                    <img className=' img1-clamp' src="https://i.pinimg.com/736x/a8/ca/6b/a8ca6b551072b470a3c57f949e399312.jpg" alt="" />
+                    <img className=' img1-clamp' src="../ssH1.jpg" alt="" />
                 </motion.div>
 
                 <motion.div
@@ -83,9 +84,9 @@ const Hero = () => {
                     animate="visible"
                     custom={3} // No delay
                     tr
-                    className=' absolute left-[26vw] lg:z-20 utlg:left-[5vw] utlg:bottom-[5vw] bottom-[5rem]'>
+                    className=' absolute left-[26vw]  utlg:left-[5vw] utlg:bottom-[5vw] bottom-[5rem]'>
                     <span className=' opacity-50  font-italiana '>(02)</span>
-                    <img className=' img2-clamp' src="https://i.pinimg.com/736x/de/7a/31/de7a31826a749692597adff53f653fd4.jpg" alt="" />
+                    <img className=' img2-clamp' src="../ssH2.jpg" alt="" />
                 </motion.div>
 
                 <motion.div
@@ -97,7 +98,7 @@ const Hero = () => {
                     className=' absolute right-[10vw] top-[5rem] utlg:top-[5rem]'>
                     <span className=' opacity-50 font-italiana hidden lg:block'>(03)</span>
                     <span className=' opacity-50 font-italiana lg:hidden'>(01)</span>
-                    <img className='  img3-clamp' src="https://i.pinimg.com/736x/14/ff/9d/14ff9dd0d086d93d84547154e2d1e9cf.jpg" alt="" />
+                    <img className='  img3-clamp' src="../ssH4.jpg" alt="" />
                 </motion.div>
                 <motion.div
                     className=' h-full flex  justify-center items-center'>

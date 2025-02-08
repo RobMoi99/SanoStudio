@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { inView, motion, useInView } from "framer-motion";
 import '../styles.css'
 import Button from './button';
+import Link from 'next/link';
 const CtaSection = () => {
 
     const words = [
@@ -61,7 +62,9 @@ const CtaSection = () => {
                 </div>
 
                 <div ref={refline} className=' flex items-center mt-10'>
-                    <Button />
+                    <Link href='/from'>
+                        <Button />
+                    </Link>
                     <motion.div
                         animate={{ scaleX: isInViewLine ? 1 : 0 }}
                         transition={{ duration: 3, ease: 'easeInOut' }}

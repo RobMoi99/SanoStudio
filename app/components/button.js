@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion";
 
-const Button = () => {
+const Button = ( ) => {
 
     const [isButtonHovered, setIsButtonHovered] = useState(false)
 

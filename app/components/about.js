@@ -23,7 +23,7 @@ const About = () => {
 
     return (
         <>
-            <div className='  font-italiana relative mb-[10rem]'>
+            <div id='about' className='  font-italiana relative mb-[10rem]'>
                 <div className=' w-full flex justify-end'>
                     <div className='page-number-clamp  right-0 m-5 '>01</div>
                 </div>
